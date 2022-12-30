@@ -1,0 +1,262 @@
+/*الغاء الهوامش الافتراشضية و الحةاف و البادينغ*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #045c84;
+align-items: center;
+
+height: 100vh;/*ان تكون على طول الشاشة*/
+
+}
+
+.text{
+  color:#e6edff ;/* لون الخط*/
+}
+.iwb{
+  margin-left: 6px;
+    border-bottom: 1px solid;
+}
+
+.container{ /*ابعاد الحاوية الموجود بداخلها الفورم*/
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #045c84;
+  border-radius: 5px;
+}
+.container .title{ /*ابعاد وتنسيق الكلام في العنوان*/
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+  color:#e6edff;
+  font-weight: 700;
+  margin-right: 80px;
+}
+.container .form{
+  width: 100%;
+
+
+}
+.container .form .mainInput{/*ابعاد وتنسيق الحاوية الموجود بداخلها حقول الادخال*/
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #757575;
+}
+.container .form .mainLabel{/*ابعاد وتنسيق لصاقات او عناوين حقول الادخال*/
+  font-size: 15px;
+  font-weight: bold;
+  color:#bab9c0
+}
+.container .form .mainInput .input{/*ابعاد وتنسيق جقول الادخال*/
+  width:250px;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0 3 ease;
+  color: black;
+}
+.submit{/*ابعاد وتنسيق زر الاضافة*/
+  width:160px;
+  margin-left: 40px;
+    margin-top: 14px;
+  outline: none;
+  border: 1px solid #045c84;
+  background-color: #37beff;
+  color: #e6edff;
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0 3 ease;
+}                 
+.add .submit:hover{
+  border: 1px solid #ffff;
+}
+.wrapper{
+  max-width: 250px;
+  width: 100%;
+}
+.wrapper .captcha-area{
+  display: flex;
+  height: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+.captcha-area{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 15px;
+  user-select: none;
+  position: relative;
+}
+ .captcha{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  color: goldenrod;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 10px;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 2px #b1b1b1;
+  font-family: 'Noto Serif', serif;
+}
+.wrapper button{
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: #045c84;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.wrapper button:hover{
+  background: #2fa5e9;
+}
+.wrapper .input-area{
+  height: 45px;
+  width: 100%;
+  position: relative;
+}
+.input-area input{
+  width:250px;
+  height: 35px;
+  outline: none;
+  padding-left: 20px;
+  font-size: 15px;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+}
+.input-area input:is(:focus, :valid){
+  padding-left: 19px;
+  border: 2px solid #045c84;
+}
+.input-area input::placeholder{
+  color: #bfbfbf;
+}
+.input-area .check-btn{
+  height: 28px;
+  position: absolute;
+  top: 39%;
+  right: 3px;
+  font-size: 15px;
+  padding: 0 20px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area input:valid + .check-btn{
+  opacity: 1;
+  pointer-events: auto;
+}
+.status-text{
+  display: none;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+  max-width: 250px;
+}
+#result{ /*تنسيق وابعاد الحاوية التي سوف يظهر بداخلها الجدول*/
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  padding-right:85px;
+  text-align: center;
+  
+
+}
+.table {/*تنسيق الجدول ككل*/
+  width: 100%;
+  border: 1px solid #CCC;
+  border-spacing: 0;
+}
+.table td {/*تنسيق الخلايا*/
+  padding: 15px;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+  margin-bottom: 20PX;
+}
+tbody{ /*تنسيق اول سطر من الجدول*/
+  background-color: #045c84;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  border-color: #2fa5e9;
+}
+tbody th{/*تنسيق خلايا اول سطر من الجدول*/
+  padding: 15px;
+  
+  border: 1px solid #CCC;
+  margin-bottom: 20PX;
+}
+.title{
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color:#e6edff;
+  font-weight: 700;
+  margin-right: 80px;
+}
+.program{/*تنسيق  سيليكت البرنامج*/
+  margin-bottom: 20px;
+    text-align: center;
+    color: #e6edff;
+    font-weight: 700;
+    margin-right: 80px;
+
+}
+.check{/*تنسيق الراديوز*/
+  margin: auto;
+  margin-bottom: 30px;
+  padding-right: 85px;
+  width: 400px;
+  display:flex;
+  justify-content: space-between;
+  color: #bab9c0;
+}
+
+.jseon-container{ /*تنسيق الديف الذي يحوي الزر و الديف خاص بيجيسون*/
+  width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    padding-right: 85px;
+    
+}
+
+
+.but{/*اتسيق زر  االذي سوف يحول محتوى الجدول الى جيسون*/
+  width:160px;
+  outline: none;
+  border: 1px solid #045c84;
+  background-color: #37beff;
+  color: #e6edff;
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.jeson{ /*نسيق ديف التي سوف تظهر بها قيم جيسون*/
+  width: 600px;
+  height: 300px;
+  background-color:#eee;
+  margin: auto;
+  border-radius: 10px;
+  padding-top: 20px;
+  line-height: 35px;
+}
+

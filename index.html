@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HomeworkIWB202</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <div class="pageContaner"><!--الحاوية الخاصة باظهار قيم حقول الادخال-->
+       <div class="container">
+           <div class="title">
+             تسجيل معلومات الطالب
+           </div>
+           <form action="" id="add" class="form">
+               <div class="mainInput">
+                   <input type="text" id="id" class="input"   placeholder="Aziz_21286" name="username" required ><!--حقل ادخال ويكون واجب ادخالة اسم المستخدم-->
+                   <label class="mainLabel">اسم المستخدم</label>
+               </div>
+               <div class="mainInput">
+                   <input type="text" id="name" class="input" placeholder='عزيز'  required >  <!--حقل ادخال الاسم واجب ادخالة-->
+                   <label class="mainLabel">اسم الطالب</label>
+               </div>
+              <div class="mainInput" >
+                   <input type="date" id="date" class="input" placeholder="MM\DD\YYYY" required ><!--حقل ادخال التاريخ ويجب ادخالة-->
+                   <label class="mainLabel">تاريخ الولادة</label>
+               </div>
+               <div class="mainInput">
+                <select name="prog" id="prog" class="input"  class="prog" required > <!--سيلكت الخاص البرامج-->
+                    <optgroup>
+                        <option  value="BIT">BIT</option> <!--محتوى السليكت-->
+                        <option value="BAIT">BAIT</option>
+                        <option value="ITC">ITC</option>
+                        <OPtion value="ITE">ITE</OPtion>
+                    </optgroup>
+                </select>
+                <label class="mainLabel">البرنامج</label>
+            </div>
+            <div class="mainInput">
+                <input type="text" id="phone" class="input" name="phone" placeholder="+963123456789" required ><!-- حقل ادخال رقم الموبايل واجب اخاله-->
+                <label class="mainLabel">الموبايل</label>
+            </div>
+           <div class="wrapper">
+                <div class="captcha-area"><!--قسم الكابشا-->
+                    <span class="captcha"></span>
+                </div>
+                <div  class="input-area">
+                  <input type="text" placeholder="Enter captcha" maxlength="6" spellcheck="false"  required>
+                </div>
+                <div class="status-text"></div>
+              </div>
+                    
+        </form>
+        <div class="add">
+            <button id="submit" class="submit">اضافة</button><!--اانشاء زر-->
+         </div>
+    </div>  
+    <div class="title">
+        معلومات الطالب
+    </div > 
+    <div class="program">
+        <select  id="filtering" class="filtering" required > <!--سيلكت الخاص البرامج-->
+        <optgroup>
+            <option  value="All">All</option><!--محتوى سيليكت-->
+            <option  value="BIT">BIT</option>
+            <option value="BAIT">BAIT</option>
+            <option value="ITC">ITC</option>
+            <OPtion value="ITE">ITE</OPtion>
+        </optgroup>
+    </select>
+    <label class="mainLabel">البرنامج</label></div>
+    <div class="check">
+       
+        <div>
+            <input type="radio"  name="fav"  checked > <!--الراديوز المختارة بشكل افتراضي-->
+            <label for="البرنامج">البرنامج</label>
+        </div>
+        <div>
+            <input type="radio" id="u" name="fav" >
+            <label for="n">اسم الطالب</label>
+        </div>
+        <div>
+            <input type="radio" id="p" name="fav"  >
+            <label for="رقم المستخدم">رقم المستخدم</label>
+        </div>
+        
+    </div>
+    <div id="result">
+        <table  id="table" class="table"> <!-- انشاء جدول لاظهار النتائج-->
+            <tr><!--سطر-->
+               <th>البرنامج</th> <!--الخلية الاولى في جدول -->
+               <th>اسم الطالب</th> <!--الخلية الثانية-->
+               <th>اسم المستخدم</th> <!--الخلية الثالثة-->
+               <th>الرقم التسلسلي</th> <!--الخلية الرابعة-->
+            </tr>
+         </table>
+    </div>
+    <div class="jseon-container">
+    <button id="but" class="but" >convert to json</button> <!--انشاء زر-->
+    <div id="jeson" class="jeson">   <!-- ديف الذي سوف يظهر فيه نص جيسون-->
+    </div>
+    <script src="JavaScript.js"></script>
+    
+</body>
+</html>
