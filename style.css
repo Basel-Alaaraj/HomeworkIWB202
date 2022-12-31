@@ -259,4 +259,25 @@ tbody th{/*تنسيق خلايا اول سطر من الجدول*/
   padding-top: 20px;
   line-height: 35px;
 }
+.online{ /* تنسيق الديف الذي يحوي رابط الذهاب الر الاستضافة*/ 
+  width: 600px;
+    outline: none;
+    background-color: #37beff;
+    color: #e6edff;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.goonline{ /*تنسيق زر الاستضافة*/
+    border: none;
+    color: #e6edff;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
